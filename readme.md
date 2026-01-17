@@ -10,10 +10,11 @@
 
 ## Yet to be covered:
 
-[ ] logical operators and relational operators -> example codes  
-[ ] conditional statements -> if, if...else, nested if...else, multiple if...else if...else  
-[ ] conditional -> switch...case statement  
+[x] logical operators and relational operators -> example codes  
+[x] conditional statements -> if, if...else, nested if...else, multiple if...else if...else  
+[x] conditional -> switch...case statement  
 ternary operator -> ?:  
-[ ] looping statements -> for, while, do...while  
-[ ] functions  
-[ ] arrays and objects
+[x] looping statements -> for, while, do...while  
+[ ] looping statements -> break and continue keywords
+[x] functions  
+[ ] arrays and objects -- methods and iterations

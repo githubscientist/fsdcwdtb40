@@ -550,8 +550,254 @@
 
 */
 
-let count = 4;
-while (count != 3) {
-    console.log("Count is: " + count);
-    count++;
-}
+// let count = 4;
+// while (count != 3) {
+//     console.log("Count is: " + count);
+//     count++;
+// }
+
+/*
+    Functions:
+
+        A block of code which gets executed when we call it.
+
+    Types:
+
+    1. Library Functions: The functions which are pre-written.
+    2. User-Defined Functions: The functions we create as a developer.
+
+    User-Defined Functions - Types:
+
+    Based on Syntax and Versions:
+
+    1. Named Functions
+    2. Nameless Functions
+    3. Arrow Functions
+    4. IIFE (Immediately Invoked Function Expression)
+
+    Based on arguments and return values:
+
+    1. function with arguments and with return value.
+    2. function with arguments and without return value.
+    3. function without arguments and without return value.
+    4. function without arguments and with return value.
+*/
+
+// console.log(5); // example of library function
+
+// Math.max() -> a library function
+// let maxValue = Math.max(4, 3, 500, 7, 3, 3, 4, 60);
+
+// console.log(maxValue);
+
+// creating a function
+
+// 1. named functions
+// function function_name
+// function sayHello() {
+//     console.log('hello');
+// }
+
+// sayHello();
+
+// 2. nameless functions or function expression or anonymous function
+// JS - dynamically typed language
+// const sayHello = function () {
+//     console.log('hello');
+// }
+
+// sayHello();
+
+// 3. arrow function (nameless functions) ES6 (2015) EcmaScript 6
+// const sayHello = () => {
+//     console.log('hello');
+// }
+
+// sayHello();
+
+// can also be used as a one-liner function
+// if the function body has only one line of code to execute
+// const sayHello = () => console.log('hello');
+
+// sayHello();
+
+// 4. IIFE: Immediately Invoked Function Expression
+// (() => {
+//     console.log('hello');
+// })();
+
+// (function () {
+//     console.log('hello');
+// })();
+
+// function without arguments and without return value
+// function sayHello() {
+//     console.log('hello');
+// }
+
+// sayHello();
+
+// function with argument and without return value
+// function sayHello(name) {
+//     console.log('hello', name);
+// }
+
+// // sathish -> argument/parameter
+// // passed from the function call to the function definition
+// sayHello('sathish');
+
+// function with argument and with return value
+// the return keyword breaks the function immediately
+// function sayHello(name) {
+//     return 'hello' + ' ' + name;
+// }
+
+// // sathish -> argument/parameter
+// // passed from the function call to the function definition
+
+// console.log(sayHello('sathish'));
+
+// named function
+// function isPositive(number) {
+//     if (number > 0) {
+//         console.log(number, 'is positive');
+//     } else if (number < 0) {
+//         console.log(number, 'is negative');
+//     } else {
+//         console.log(number, 'is a zero');
+//     }
+// }
+
+// isPositive(5);
+
+// nameless function
+// const isPositive = function (number) {
+//     if (number > 0) {
+//         console.log(number, 'is positive');
+//     } else if (number < 0) {
+//         console.log(number, 'is negative');
+//     } else {
+//         console.log(number, 'is a zero');
+//     }
+// }
+
+// isPositive(5);
+
+// arrow function
+// const isPositive = (number) => {
+//     if (number > 0) {
+//         console.log(number, 'is positive');
+//     } else if (number < 0) {
+//         console.log(number, 'is negative');
+//     } else {
+//         console.log(number, 'is a zero');
+//     }
+// }
+
+// isPositive(5);
+
+// IIFE
+// ((number) => {
+//     if (number > 0) {
+//         console.log(number, 'is positive');
+//     } else if (number < 0) {
+//         console.log(number, 'is negative');
+//     } else {
+//         console.log(number, 'is a zero');
+//     }
+// })(5);
+
+// recursive function: a function that calls itself.
+
+// function main() {
+//     console.log('hello');
+//     main();
+// }
+
+// main();
+
+/*
+    Arrays:
+
+        A Data type that allows us to store multiple elements.
+
+    Data type: Object
+*/
+
+// let numbers = [4, 5, 3, 1, 2];
+
+// let fruits = ['mango', 'orange', 'apple', 'grapes', 'banana'];
+
+// let branch = ['coimbatore', 250, 120000, 200000, 0.25, true];
+
+// prints the entire array
+// console.log(branch);
+
+// indexing
+// console.log(numbers[0]);
+
+// accessing a particular element
+// console.log(fruits[3]);
+
+// updating a value at an index
+// mutables -> changeables
+// numbers[2] = 6;
+
+// console.log(numbers);
+
+// functions that are applicable to only a particular object created from a class -> methods
+// class -> collection of objects or blue print or a template
+// object -> instance of a class
+// console.log(numbers);
+
+// let numbers = [3, 2, 1, 5, 4];
+// let numbers = new Array(3, 2, 1, 5, 4);
+
+// array methods -> functions that are pre-written
+
+// push -> inserts values to the end of the array
+// numbers.push(6);
+// numbers.push(10, 7);
+
+// length is a property and not a method
+// console.log(numbers.length);
+
+// pop -> removes a value from the end of the array
+// numbers.pop();
+// numbers.pop();
+
+// unshift -> inserts a value or more values at the beginning of the array
+// numbers.unshift(11, 24);
+
+// shift -> removes one element from the beginning of the array
+// numbers.shift();
+// numbers.shift();
+
+// to insert or delete an element in either beginning or end or anywhere in the array -> splice
+
+// insert: element: 7
+// between 1 and 5
+// index: 3
+// numbers.splice(3, 0, 7);
+
+// numbers.splice(5, 1);
+
+// console.log(numbers);
+
+numbers = 0xfae12af
+// 300 301 302 303 304 305 306 307
+// numbers = 300
+
+// we cannot re-assign a value
+const numbers = [3, 5, 2, 1, 4];
+//              300 304 308 312 316
+// numbers -> 300 (get all values starting from address 300)
+// numbers[0] -> numbers + 0 * (size of the number) => 300 => 3
+// numbers[2] -> 308 -> 2
+
+// numbers[0] = 13;
+// numbers = [13, 5, 2, 1, 4];
+
+numbers.push(7);
+
+console.log(numbers);
