@@ -12,4 +12,9 @@ fruits.forEach(fruit => {
     ul.appendChild(li);
 })
 
+ul.style.color = 'red';
+
+ul.setAttribute('style', 'color: green;');
+ul.setAttribute('class', 'fruitsList');
+
 document.body.append(h1, ul);
