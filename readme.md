@@ -17,3 +17,7 @@ Content Delivery Network is a system of distributed servers that deliver web con
 DOM:
 
 - Document Object Model is a programming interface for web documents that represents the structure of a document as a tree of objects, allowing scripts to manipulate the content and structure of web pages dynamically.
+
+DOM:
+
+- Dynamic Content Manipulation refers to the ability to change the content, structure, and style of a web page in real-time using JavaScript or other scripting languages, enabling interactive and responsive user experiences.
