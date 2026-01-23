@@ -6,10 +6,10 @@
         <title>Document Object Model</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-
         <script>
-            console.log('hello world!');
+            const h1 = document.createElement('h1');
+            h1.textContent = "Hello World!";
+            document.body.appendChild(h1);
         </script>
     </body>
 </html>
