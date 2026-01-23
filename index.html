@@ -6,16 +6,22 @@
         <title>Document Object Model</title>
     </head>
     <body>
-        <h1 id="headerID" class="headerClass greenText">Hello JavaScript!</h1>
-
-        <p class="headerClass">Welcome to DOM Demo!</p>
-
         <script>
-            const h1 = document.getElementById("headerID");
-            console.log(h1);
+            let fruits = ["Apple", "Banana", "Orange", "Mango", "Grape", "Strawberry", "Pineapple", "Peach", "Pear", "Plum", "Cherry"];
 
-            const headerClass = document.getElementsByClassName("headerClass");
-            console.log(headerClass);
+            const h1 = document.createElement('h1');
+            h1.textContent = "List of Fruits";
+
+            const ul = document.createElement('ul');
+
+            fruits.forEach(fruit => {
+                const li = document.createElement('li');
+                li.textContent = fruit;
+
+                ul.appendChild(li);
+            })
+
+            document.body.append(h1, ul);
         </script>
     </body>
 </html>
