@@ -13,3 +13,7 @@ Framework:
 CDN:
 
 Content Delivery Network is a system of distributed servers that deliver web content to users based on their geographic location, improving load times and performance.
+
+DOM:
+
+- Document Object Model is a programming interface for web documents that represents the structure of a document as a tree of objects, allowing scripts to manipulate the content and structure of web pages dynamically.
