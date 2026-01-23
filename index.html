@@ -6,15 +6,16 @@
         <title>Document Object Model</title>
     </head>
     <body>
-        <h1>Hello JavaScript!</h1>
-        <h1>Hello HTML!</h1>
-        <h1>Hello CSS!</h1>
+        <h1 id="headerID" class="headerClass greenText">Hello JavaScript!</h1>
+
+        <p class="headerClass">Welcome to DOM Demo!</p>
 
         <script>
-            const headers = document.getElementsByTagName('h1');
-            for(let i=0; i<headers.length; i++){
-                console.log(headers[i].textContent);
-            }
+            const h1 = document.getElementById("headerID");
+            console.log(h1);
+
+            const headerClass = document.getElementsByClassName("headerClass");
+            console.log(headerClass);
         </script>
     </body>
 </html>
