@@ -1,3 +1,65 @@
-.fruitsList {
-    font-style: italic;
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* text-align: center; */
 }
+
+/* h1 {
+    color: red;
+} */
+
+/* .italics {
+    font-style: italic;
+} */
+
+/* .green {
+    color: green;
+} */
+
+/* #quote {
+    color: blue;
+} */
+
+/* p[class="italics"] {
+    color: chocolate;
+} */
+
+/* h1, p {
+    color: aqua;
+} */
+
+/*  selector: child selector */
+/* #list > li {
+    color: purple;
+} */
+
+
+/*  selector: descendant selector */
+/* #list li {
+    color: purple;
+} */
+
+/*  selector: adjacent sibling selector */
+
+/* h1 + p {
+    color: orange;
+} */
+
+/* selector: general sibling selector */
+/* 
+h1 ~ p {
+    color: red;
+} */
+
+#list li:nth-child(4){
+    color: teal;
+}
+
+/* #list li:first-child {
+    color: teal;
+} */
+
+/* #list li:last-child {
+    color: olive;
+} */
