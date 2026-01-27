@@ -16,7 +16,24 @@
 }
 
 .green {
+    /* position: absolute; */
+}
+
+.red {
+    position: absolute;
+    /* z-index: -1; */
+    left: 50px;
+    top: 50px;
+}
+
+.green {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.blue {
     position: relative;
     top: 50px;
-    left: 50px;
+    left: 150px;
 }
