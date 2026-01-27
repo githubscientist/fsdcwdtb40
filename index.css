@@ -1,3 +1,9 @@
-.header {
-    position: static;
+body {
+    height: 2000px;
+}
+
+.authorImage {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
