@@ -52,9 +52,9 @@ h1 ~ p {
     color: red;
 } */
 
-#list li:nth-child(4){
+/* #list li:nth-child(4){
     color: teal;
-}
+} */
 
 /* #list li:first-child {
     color: teal;
