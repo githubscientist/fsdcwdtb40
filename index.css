@@ -1,39 +1,106 @@
-.box {
-    width: 100px;
-    height: 100px;
+nav > ul{
+    list-style-type: none; /* removes the bullets or numbering */
 }
 
-.green {
-    border: 3px solid green;
+nav > ul > li > a{
+    text-decoration: none; /* removes underline in the hyperlink */
 }
 
-.red {
-    border: 3px solid red;
+nav > ul {
+    /* border: 1px solid black; */
+    /* height: 200px; */
 }
 
-.blue {
-    border: 3px solid blue;
+.menu {
+    display: flex;
+    /* by default the flex-direction is row */
+    /* flex-direction: row;  */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* justify-content: left; */
+    /* justify-content: right; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* gap: 25px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: right;
+    /* flex-basis: 100px; */
 }
 
-.green {
-    /* position: absolute; */
+.menu > li {
+    padding: 8px;
+    border: 1px solid green;
+    margin: 1px;
+    /* height: 25px; */
+    /* width: 90px; */
+    text-align: center;
 }
 
-.red {
-    position: absolute;
-    /* z-index: -1; */
-    left: 50px;
-    top: 50px;
+.menu > li > a {
+    color: black;
 }
 
-.green {
-    position: relative;
-    top: 100px;
-    left: 100px;
+.menu > li:hover {
+    background-color: green;
+    color: white;
 }
 
-.blue {
-    position: relative;
-    top: 50px;
-    left: 150px;
+.menu > li > a:hover {
+    color: white;
+}
+
+.home {
+    flex-grow: 1;
+}
+
+.courses {
+    flex-grow: 1;
+}
+
+.menu > li {
+    flex-grow: 1;
+}
+
+/* .courses {
+    flex-grow: 2;
+} */
+
+/*
+    Home
+    Courses
+    Practice
+    Resources
+    Our Products
+
+    Reorder:
+
+    Home
+    Courses
+    Our Products
+    Resources
+    Practice
+*/
+
+.home {
+    order: 1;
+}
+
+.courses {
+    order: 2;
+}
+
+.products {
+    order: 3;
+}
+
+.resources {
+    order: 4;
+}
+
+.practice {
+    order: 5;
 }
