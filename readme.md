@@ -1,6 +1,11 @@
-# Flex Box in CSS
+# Promises
 
-- Flexbox or the Flexible Box Layout is a CSS3 web layout model.
-- It is designed to provide a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown or dynamic.
-- Flexbox allows responsive elements within a container to be automatically arranged depending upon screen size (or device).
-- Flexbox is particularly useful for designing layouts for single-dimensional layouts, either in a row or a column.
+A promise is an object representing the eventual completion or failure of an asynchronous operation. It allows you to attach callbacks for handling the success or failure of that operation.
+
+## Callback functions
+
+A function that is passed as an argument to another function and is executed after some operation has been completed.
+
+## Higher Order functions
+
+A function that takes one or more functions as arguments, or returns a function as its result.
