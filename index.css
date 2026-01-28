@@ -1,106 +1,56 @@
-nav > ul{
-    list-style-type: none; /* removes the bullets or numbering */
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-template-rows: 50px 50px 50px 50px 50px 50px; */
+    /* grid-template-rows: auto auto auto auto; */
 }
 
-nav > ul > li > a{
-    text-decoration: none; /* removes underline in the hyperlink */
+.header {
+    grid-column: 1 / 5;
 }
 
-nav > ul {
+.container > div {
+    /* height: 50px; */
+    padding: 10px;
     /* border: 1px solid black; */
-    /* height: 200px; */
-}
-
-.menu {
-    display: flex;
-    /* by default the flex-direction is row */
-    /* flex-direction: row;  */
-    /* flex-direction: column; */
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column-reverse; */
-
-    /* justify-content: left; */
-    /* justify-content: right; */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
-    /* gap: 25px; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    justify-content: right;
-    /* flex-basis: 100px; */
-}
-
-.menu > li {
-    padding: 8px;
-    border: 1px solid green;
-    margin: 1px;
-    /* height: 25px; */
-    /* width: 90px; */
     text-align: center;
-}
-
-.menu > li > a {
-    color: black;
-}
-
-.menu > li:hover {
-    background-color: green;
     color: white;
 }
 
-.menu > li > a:hover {
-    color: white;
+.header {
+    background-color: #54D5EB;
 }
 
-.home {
-    flex-grow: 1;
+.sidebar {
+    background-color: #A0C262;
 }
 
-.courses {
-    flex-grow: 1;
+.main {
+    background-color: #F5C531;
 }
 
-.menu > li {
-    flex-grow: 1;
+.extra {
+    background-color: #898989;
 }
 
-/* .courses {
-    flex-grow: 2;
-} */
-
-/*
-    Home
-    Courses
-    Practice
-    Resources
-    Our Products
-
-    Reorder:
-
-    Home
-    Courses
-    Our Products
-    Resources
-    Practice
-*/
-
-.home {
-    order: 1;
+.footer {
+    background-color: #FFA503;
 }
 
-.courses {
-    order: 2;
+.main {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
 }
 
-.products {
-    order: 3;
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
 }
 
-.resources {
-    order: 4;
+.extra {
+    grid-column: 2 / 5;
 }
 
-.practice {
-    order: 5;
+.footer {
+    grid-column: 1 / 5;
 }
