@@ -1,5 +1,5 @@
 const promise = new Promise((resolve, reject) => {
-    reject();
+    resolve();
 });
 
 promise
@@ -7,7 +7,9 @@ promise
         // success callback 
         () => {
             console.log('operation success');
-        },
+        }
+    )
+    .catch(
         () => {
             console.log('operation failed');
         }
