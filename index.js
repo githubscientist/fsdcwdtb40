@@ -1,14 +1,7 @@
-function getMeaning(word) {
-    fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + word)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            console.log(data);
-        })
-        .catch((error) => {
-            console.log(error);
-        })
+async function getMeaning(word) {
+    const response = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + word);
+    const data = await response.json();
+    console.log(data);
 }
 
 getMeaning('apple');
