@@ -1,16 +1,3 @@
-const promise = new Promise((resolve, reject) => {
-    resolve();
-});
+const add = require('./Lib');
 
-promise
-    .then(
-        // success callback 
-        () => {
-            console.log('operation success');
-        }
-    )
-    .catch(
-        () => {
-            console.log('operation failed');
-        }
-    )
+console.log(add(5, 6));

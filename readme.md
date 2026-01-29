@@ -1,11 +1,10 @@
-# Promises
+# Modules and Imports in JavaScript
 
-A promise is an object representing the eventual completion or failure of an asynchronous operation. It allows you to attach callbacks for handling the success or failure of that operation.
+There are two primary module systems in JavaScript:
 
-## Callback functions
-
-A function that is passed as an argument to another function and is executed after some operation has been completed.
-
-## Higher Order functions
-
-A function that takes one or more functions as arguments, or returns a function as its result.
+1.  CommonJS (CJS)
+    - The CommonJS module system is primarily used in Node.js.
+    - The extension for CommonJS files is typically `.js` and we can also use `.cjs`.
+2.  ECMAScript Modules (ESM)
+    - The ECMAScript module system is the standardized module system for JavaScript.
+    - The extension for ECMAScript module files is typically `.mjs` and we can also use `.js` if specified in the `package.json`.
