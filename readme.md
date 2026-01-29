@@ -1,14 +1,6 @@
-# Modules and Imports in JavaScript
+# synchronous vs asynchronous
 
-There are two primary module systems in JavaScript:
-
-1.  CommonJS (CJS)
-    - The CommonJS module system is primarily used in Node.js.
-    - The extension for CommonJS files is typically `.js` and we can also use `.cjs`.
-2.  ECMAScript Modules (ESM)
-    - The ECMAScript module system is the standardized module system for JavaScript.
-    - The extension for ECMAScript module files is typically `.mjs` and we can also use `.js` if specified in the `package.json`.
-
-## Destructuring
-
-Destructuring is a convenient way of extracting multiple values from data stored in objects and arrays.
+- synchronous: blocking
+  - a function that waits for another function to complete before executing the next line of code.
+- asynchronous: non-blocking
+  - a function that can execute without waiting for another function to complete, allowing other code to run in the meantime.

@@ -1,21 +1,14 @@
-const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve();
-    }, 3000);
-});
+function getMeaning(word) {
+    fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + word)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+}
 
-console.log(promise);
-
-promise
-    .then(
-        // success callback 
-        () => {
-            console.log('operation success');
-            console.log(promise);
-        }
-    )
-    .catch(
-        () => {
-            console.log('operation failed');
-        }
-    )
+getMeaning('apple');
