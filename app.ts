@@ -5,4 +5,6 @@
 // TypeScript
 let age: number = 25;
 
+age = 'apple';
+
 console.log(age);
