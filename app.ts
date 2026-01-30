@@ -24,7 +24,12 @@
 
 // Type Inference
 
-let age = 10; // the typescript automatically detects the data type of the variable
+// let age = 10; // the typescript automatically detects the data type of the variable
 // as soon as the value is assigned.
 
 // age = 'ten';
+
+let numbers: number[] = [1, 2, 3, 4, 5];
+let names: string[] = ['Apple', 'Orange'];
+
+console.log(numbers);
