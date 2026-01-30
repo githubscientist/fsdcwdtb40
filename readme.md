@@ -32,3 +32,7 @@
 ## Type Inference
 
 - TypeScript can automatically infer types based on the assigned values.
+
+## Type Annotations
+
+- You can explicitly specify types using type annotations.

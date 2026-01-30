@@ -18,6 +18,24 @@
 // let age = 10; // the typescript automatically detects the data type of the variable
 // as soon as the value is assigned.
 // age = 'ten';
-var numbers = [1, 2, 3, 4, 5];
-var names = ['Apple', 'Orange'];
-console.log(numbers);
+// let numbers: number[] = [1, 2, 3, 4, 5];
+// let names: string[] = ['Apple', 'Orange'];
+// console.log(numbers);
+// any type
+// let data:any =  10; // type inference: the number type would be assinged to the variable will make the data type of the variable as such.
+// data = 'ten'; // this will throw an error, because the type of data is trying to chgance
+// data = true;
+// console.log(data);
+// Tuple: Fixed Structure
+// let fruits: [string, number] = ['apple', 25];
+// console.log(fruits);
+// Enums: Enumeration Constants
+var Direction;
+(function (Direction) {
+    Direction[Direction["Up"] = 10] = "Up";
+    Direction[Direction["Down"] = 11] = "Down";
+    Direction[Direction["Left"] = 12] = "Left";
+    Direction[Direction["Right"] = 13] = "Right";
+})(Direction || (Direction = {}));
+var move = Direction.Right;
+console.log(move);

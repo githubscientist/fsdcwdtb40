@@ -29,7 +29,33 @@
 
 // age = 'ten';
 
-let numbers: number[] = [1, 2, 3, 4, 5];
-let names: string[] = ['Apple', 'Orange'];
+// let numbers: number[] = [1, 2, 3, 4, 5];
+// let names: string[] = ['Apple', 'Orange'];
 
-console.log(numbers);
+// console.log(numbers);
+
+// any type
+// let data:any =  10; // type inference: the number type would be assinged to the variable will make the data type of the variable as such.
+
+// data = 'ten'; // this will throw an error, because the type of data is trying to chgance
+
+// data = true;
+
+// console.log(data);
+
+// Tuple: Fixed Structure
+// let fruits: [string, number] = ['apple', 25];
+
+// console.log(fruits);
+
+// Enums: Enumeration Constants
+enum Direction {
+    Up, 
+    Down,
+    Left,
+    Right
+}
+
+let move: Direction = Direction.Right;
+
+console.log(move);
