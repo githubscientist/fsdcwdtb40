@@ -12,3 +12,23 @@
 - JavaScript code does not by default have type annotations, hence, we will not be able to catch type-related errors until runtime.
 - The browsers can only understand JavaScript, so TypeScript code needs to be transpiled (converted) into JavaScript before it can be executed in a browser or a JavaScript runtime environment like Node.js.
 - TypeScript files have a `.ts` extension, while JavaScript files have a `.js` extension.
+
+## Primitive Types in TypeScript
+
+1. **Number**: Represents both integer and floating-point numbers.
+   - Example: `let age: number = 25;`
+2. **String**: Represents textual data.
+   - Example: `let name: string = "John";`
+3. **Boolean**: Represents true/false values.
+   - Example: `let isStudent: boolean = true;`
+4. **Array**: Represents a collection of values of the same type.
+   - Example: `let numbers: number[] = [1, 2, 3
+5. **Object**: Represents a collection of key-value pairs.
+   - Example: `let person: { name: string; age: number } = { name: "Alice", age: 30 };`
+6. **Tuple**: Represents an array with a fixed number of elements of different types.
+   - Example: `let tuple: [string, number] = ["Hello", 42];
+7. **Enum**: Represents a set of named constants.
+
+## Type Inference
+
+- TypeScript can automatically infer types based on the assigned values.
