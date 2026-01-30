@@ -98,9 +98,54 @@
 // console.log(add(5, 6));
 
 // default parameters
-const add =  (a: number, b: number = 0): number => {
-    return a + b;
+// const add =  (a: number, b: number = 0): number => {
+//     return a + b;
+// }
+
+// console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
+// console.log(add(5, 6));
+
+// union types
+// let id: number | string;
+
+// id = 101;
+// // id = 'a101';
+
+// console.log(id);
+
+// Union types
+// let id: number | string;
+
+// id = 101;
+
+// function getId(id: number | string) {
+//     console.log(id);
+// }
+
+// getId(112);
+// type User = {
+//     name: string,
+//     age: number,
+// };
+
+
+// Type Aliases
+// let u1:User  = {
+//     name: 'krish',
+//     age: 25
+// }
+
+// console.log(u1);
+
+interface User {
+    readonly name: string,
+    age?: number
 }
 
-console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
-console.log(add(5, 6));
+let u1: User = {
+    name: "sathish"
+}
+
+u1.name = 'krish';
+
+console.log(u1);
