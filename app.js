@@ -29,13 +29,13 @@
 // Tuple: Fixed Structure
 // let fruits: [string, number] = ['apple', 25];
 // console.log(fruits);
-// Enums: Enumeration Constants
-var Direction;
-(function (Direction) {
-    Direction[Direction["Up"] = 10] = "Up";
-    Direction[Direction["Down"] = 11] = "Down";
-    Direction[Direction["Left"] = 12] = "Left";
-    Direction[Direction["Right"] = 13] = "Right";
-})(Direction || (Direction = {}));
-var move = Direction.Right;
-console.log(move);
+var Rating;
+(function (Rating) {
+    Rating[Rating["poor"] = 1] = "poor";
+    Rating[Rating["good"] = 2] = "good";
+    Rating[Rating["better"] = 3] = "better";
+    Rating[Rating["average"] = 4] = "average";
+    Rating[Rating["excellent"] = 5] = "excellent";
+})(Rating || (Rating = {}));
+var rating = Rating.excellent;
+console.log(rating);

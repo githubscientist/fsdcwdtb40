@@ -48,14 +48,14 @@
 
 // console.log(fruits);
 
-// Enums: Enumeration Constants
-enum Direction {
-    Up, 
-    Down,
-    Left,
-    Right
+enum Rating {
+    poor = 1,
+    good,
+    better,
+    average,
+    excellent,
 }
 
-let move: Direction = Direction.Right;
+let rating: Rating = Rating.excellent;
 
-console.log(move);
+console.log(rating);
