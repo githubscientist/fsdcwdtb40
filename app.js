@@ -29,13 +29,46 @@
 // Tuple: Fixed Structure
 // let fruits: [string, number] = ['apple', 25];
 // console.log(fruits);
-var Rating;
-(function (Rating) {
-    Rating[Rating["poor"] = 1] = "poor";
-    Rating[Rating["good"] = 2] = "good";
-    Rating[Rating["better"] = 3] = "better";
-    Rating[Rating["average"] = 4] = "average";
-    Rating[Rating["excellent"] = 5] = "excellent";
-})(Rating || (Rating = {}));
-var rating = Rating.excellent;
-console.log(rating);
+// enum Rating {
+//     poor = 1,
+//     good,
+//     better,
+//     average,
+//     excellent,
+// }
+// let rating: Rating = Rating.excellent;
+// console.log(rating);
+// let student: {
+//     name: string,
+//     age: number,
+//     isPassed: boolean,
+//     [key: string]: any,
+// } = {
+//     name: 'krish',
+//     age: 25,
+//     isPassed: true
+// }
+// // console.log(student['name']);
+// student.location = 'coimbatore';
+// console.log(student);
+// function add(a: number, b: number): number {
+//     return a + b;
+// }
+// console.log(add(5, 6));
+// arrow functions
+// const add =  (a: number, b: number): number => {
+//     return a + b;
+// }
+// console.log(add(5, 6));
+// optional arguments
+// const add =  (a: number, b?: number): number => {
+//     return a + b;
+// }
+// console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
+// console.log(add(5, 6));
+var add = function (a, b) {
+    if (b === void 0) { b = 0; }
+    return a + b;
+};
+console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
+console.log(add(5, 6));

@@ -48,14 +48,59 @@
 
 // console.log(fruits);
 
-enum Rating {
-    poor = 1,
-    good,
-    better,
-    average,
-    excellent,
+// enum Rating {
+//     poor = 1,
+//     good,
+//     better,
+//     average,
+//     excellent,
+// }
+
+// let rating: Rating = Rating.excellent;
+
+// console.log(rating);
+
+// let student: {
+//     name: string,
+//     age: number,
+//     isPassed: boolean,
+//     [key: string]: any,
+// } = {
+//     name: 'krish',
+//     age: 25,
+//     isPassed: true
+// }
+
+// // console.log(student['name']);
+// student.location = 'coimbatore';
+
+// console.log(student);
+
+// function add(a: number, b: number): number {
+//     return a + b;
+// }
+
+// console.log(add(5, 6));
+
+// arrow functions
+// const add =  (a: number, b: number): number => {
+//     return a + b;
+// }
+
+// console.log(add(5, 6));
+
+// optional arguments
+// const add =  (a: number, b?: number): number => {
+//     return a + b;
+// }
+
+// console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
+// console.log(add(5, 6));
+
+// default parameters
+const add =  (a: number, b: number = 0): number => {
+    return a + b;
 }
 
-let rating: Rating = Rating.excellent;
-
-console.log(rating);
+console.log(add(5)); // b = undefined undefined + 5 = NaN (Not A Number)
+console.log(add(5, 6));
