@@ -243,23 +243,27 @@
 */
 
 // function type definition
-let getVowelsCount: (inputString: string) => number;
+// let getVowelsCount: (inputString: string) => number;
 
-// function body
-getVowelsCount = (inputString) => {
-    let vowels: number = 0;
-    for (let ch of inputString) {
-        switch (ch) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                vowels++;
-                break;
-        }
-    }
-    return vowels;
-}
+// // function body
+// getVowelsCount = (inputString) => {
+//     let vowels: number = 0;
+//     for (let ch of inputString) {
+//         switch (ch) {
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//                 vowels++;
+//                 break;
+//         }
+//     }
+//     return vowels;
+// }
 
-console.log(getVowelsCount('welcome'));
+// console.log(getVowelsCount('welcome'));
+
+/*
+    
+*/

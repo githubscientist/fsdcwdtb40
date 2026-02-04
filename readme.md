@@ -36,3 +36,16 @@
 ## Type Annotations
 
 - You can explicitly specify types using type annotations.
+
+### Library Vs Framework
+
+Library: A collection of pre-written code that developers can use to optimize tasks. It provides specific functionality that can be called upon when needed. It can be a function, a set of functions, or classes or variables or methods.
+
+Framework: A collection of libraries and tools with a defined structure and set of rules for building applications. It provides a foundation and guidelines for developers to follow, often dictating the overall architecture and flow of the application.
+
+### JavaScipt Import and Exports
+
+There are two types of JavaScript modules: CommonJS and ES6 Modules.
+
+- CommonJS is used in Node.js and uses `require` for importing and `module.exports` for exporting.
+- It will have .js extension or .cjs extension.
