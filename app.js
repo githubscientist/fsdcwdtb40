@@ -112,12 +112,82 @@
 // }
 // console.log(addTwoNumbers(5, 6));
 // optional parameters
-function greeting(name, age) {
-    if (age) {
-        return 'Hi, ' + name + ". You're " + age + " years old";
+// function greeting(name: string, age?: number): string {
+//     if (age) {
+//         return 'Hi, ' + name + ". You're " + age + " years old";
+//     } else {
+//         return 'Hi, ' + name
+//     }
+// }
+// console.log(greeting('krish', 25));
+// default parameter
+// void return type
+// function type definition
+/*
+    Question: Write a TypeScript function called calculateTotalPrice that:
+
+        1. Accepts:
+            - price(number)
+            - quantity(number)
+            - taxRate(number in percentage)
+        2. Calcualtes:
+            - Total Price = (price * quantity) + tax
+        
+        3. Returns the final total price.
+        4. Add proper annotations for parameters and return type.
+        5. Return an error message if the inputs are invalid (price < 0 or quantity < 0 or taxRate < 0)
+*/
+// function placeholder
+// const calculate = function() {
+// }
+// const calculate = () => {
+// }
+// optional parameters
+// function calculateTotalPrice(price: number, quantity: number, taxRate?: number): number | string {
+//     if (price < 0 || quantity < 0 || taxRate < 0) {
+//         return 'Invalid Input';
+//     }
+//     let totalPrice = (price * quantity) + (price * quantity * taxRate) / 100;
+//     return totalPrice;
+// }
+// console.log(calculateTotalPrice(100, 2, 5));
+// default parameter
+// function calculateTotalPrice(price: number, quantity: number, taxRate: number = 18): number | string {
+//     if (price < 0 || quantity < 0 || taxRate < 0) {
+//         return 'Invalid Input';
+//     }
+//     let totalPrice = (price * quantity) + (price * quantity * taxRate) / 100;
+//     return totalPrice;
+// }
+// // console.log(calculateTotalPrice(100, 2, 5));
+// console.log(calculateTotalPrice(100, 2));
+// Function Type Definition
+/*
+    Function: getVowelsCount(string)
+
+    returns the number of vowels in the string.
+
+    Vowels: 'a', 'e', 'i', 'o', 'u'
+
+    note: the input is in lowercase
+*/
+// function type definition
+var getVowelsCount;
+// function body
+getVowelsCount = function (inputString) {
+    var vowels = 0;
+    for (var _i = 0, inputString_1 = inputString; _i < inputString_1.length; _i++) {
+        var ch = inputString_1[_i];
+        switch (ch) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                vowels++;
+                break;
+        }
     }
-    else {
-        return 'Hi, ' + name;
-    }
-}
-console.log(greeting('krish', 25));
+    return vowels;
+};
+console.log(getVowelsCount('welcome'));
