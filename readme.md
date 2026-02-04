@@ -49,3 +49,6 @@ There are two types of JavaScript modules: CommonJS and ES6 Modules.
 
 - CommonJS is used in Node.js and uses `require` for importing and `module.exports` for exporting.
 - It will have .js extension or .cjs extension.
+
+- ES6 Modules are used in modern JavaScript environments and use `import` and `export` keywords.
+- It will have .mjs extension or .js extension.

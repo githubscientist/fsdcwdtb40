@@ -17,4 +17,4 @@ getVowelsCount = function (inputString) {
 };
 
 // export, so that it will be available globally within this workspace and any other files can import to use it.
-module.exports = getVowelsCount;
+export default getVowelsCount;
