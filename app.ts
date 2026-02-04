@@ -137,15 +137,38 @@
 
 // console.log(u1);
 
-interface User {
-    readonly name: string,
-    age?: number
+// interface User {
+//     readonly name: string,
+//     age?: number
+// }
+
+// let u1: User = {
+//     name: "sathish"
+// }
+
+// u1.name = 'krish';
+
+// console.log(u1);
+
+// Functions
+
+// function addTwoNumbers(a:number, b:number): number {
+//     return a + b;
+// }
+
+// const addTwoNumbers = (a:number, b:number) => {
+//     return a + b;
+// }
+
+// console.log(addTwoNumbers(5, 6));
+
+// optional parameters
+function greeting(name: string, age?: number): string {
+    if (age) {
+        return 'Hi, ' + name + ". You're " + age + " years old";
+    } else {
+        return 'Hi, ' + name
+    }
 }
 
-let u1: User = {
-    name: "sathish"
-}
-
-u1.name = 'krish';
-
-console.log(u1);
+console.log(greeting('krish', 25));
