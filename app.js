@@ -172,22 +172,26 @@
     note: the input is in lowercase
 */
 // function type definition
-var getVowelsCount;
-// function body
-getVowelsCount = function (inputString) {
-    var vowels = 0;
-    for (var _i = 0, inputString_1 = inputString; _i < inputString_1.length; _i++) {
-        var ch = inputString_1[_i];
-        switch (ch) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                vowels++;
-                break;
-        }
-    }
-    return vowels;
-};
-console.log(getVowelsCount('welcome'));
+// let getVowelsCount: (inputString: string) => number;
+// // function body
+// getVowelsCount = (inputString) => {
+//     let vowels: number = 0;
+//     for (let ch of inputString) {
+//         switch (ch) {
+//             case 'a':
+//             case 'e':
+//             case 'i':
+//             case 'o':
+//             case 'u':
+//                 vowels++;
+//                 break;
+//         }
+//     }
+//     return vowels;
+// }
+// console.log(getVowelsCount('welcome'));
+/*
+    
+*/
+var number = 10;
+console.log(number);
