@@ -56,3 +56,9 @@ There are two types of JavaScript modules: CommonJS and ES6 Modules.
 ### JavaScript
 
 - Browser and Node.js are the two main environments where JavaScript is executed.
+
+### TypeScript
+
+Classes:
+
+- TypeScript supports classes, which are a blueprint for creating objects. They can have properties and methods, and can be instantiated to create multiple objects.
