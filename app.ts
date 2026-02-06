@@ -267,4 +267,28 @@
 /*
     
 */
-import { ReadLine } from "node:readline";
+import * as readline from 'readline';
+
+// create an interface
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// rl.question("what's your name? ", (name) => {
+//     console.log('Hi ' + name + "!");
+
+//     rl.close();
+// });
+
+let userInput: string[] = [];
+
+rl.on("line", (input) => {
+    userInput.push(input);
+    console.log(userInput);
+});
+
+rl.on('close', () => {
+    console.log('you have entered all your inputs!');
+    console.log(userInput);
+});

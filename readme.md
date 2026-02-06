@@ -52,3 +52,7 @@ There are two types of JavaScript modules: CommonJS and ES6 Modules.
 
 - ES6 Modules are used in modern JavaScript environments and use `import` and `export` keywords.
 - It will have .mjs extension or .js extension.
+
+### JavaScript
+
+- Browser and Node.js are the two main environments where JavaScript is executed.

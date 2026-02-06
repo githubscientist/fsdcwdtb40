@@ -1,6 +1,8 @@
+"use strict";
 // create a variable and assign a value 25
 // JavaScript
 // let age = 25;
+Object.defineProperty(exports, "__esModule", { value: true });
 // TypeScript
 // Variable re-assignment wit a different is not possible
 // let age: number = 25;
@@ -193,5 +195,22 @@
 /*
     
 */
-var number = 10;
-console.log(number);
+var readline = require("readline");
+// create an interface
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+// rl.question("what's your name? ", (name) => {
+//     console.log('Hi ' + name + "!");
+//     rl.close();
+// });
+var userInput = [];
+rl.on("line", function (input) {
+    userInput.push(input);
+    console.log(userInput);
+});
+rl.on('close', function () {
+    console.log('you have entered all your inputs!');
+    console.log(userInput);
+});
