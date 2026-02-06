@@ -9,17 +9,25 @@ var DOB = /** @class */ (function () {
         this.day = day;
         this.month = month;
         this.year = year;
-        console.log(this); // this -> dob1
+        // console.log(this); // this -> dob1
     }
+    // printObject(object: DOB) {
+    //     console.log(object);
+    // }
+    DOB.prototype.getAge = function () {
+        return 2026 - this.year;
+    };
     return DOB;
 }());
 // dob1 -> object
 // object: it is an instance of a class
-var dob1 = new DOB(6, 'Feb', 2026);
+var dob1 = new DOB(6, 'Feb', 2015);
 // this keyword -> current instance referring to the current object of the class
 // implicitly passed to the class'es constructor or methods
 // explicitly passed to the method
 // dob1.printObject(dob1);
+// console.log(dob1.day, dob1.month, dob1.year);
+console.log('You are', dob1.getAge(), ' years old');
 /*
     dob1 = DOB {
         day: 6,
