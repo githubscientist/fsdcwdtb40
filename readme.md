@@ -62,3 +62,17 @@ There are two types of JavaScript modules: CommonJS and ES6 Modules.
 Classes:
 
 - TypeScript supports classes, which are a blueprint for creating objects. They can have properties and methods, and can be instantiated to create multiple objects.
+
+#### Object Oriented Programming (OOP)
+
+- class: A blueprint for creating objects, providing initial values for state (properties) and implementations of behavior (methods).
+
+- object: An instance of a class that contains data and behavior defined by the class.
+
+- data encapsulation: The concept of bundling data (properties) and methods that operate on that data into a single unit (class), and restricting access to some of the object's components.
+
+- data abstraction: The process of hiding the complex implementation details of a class and exposing only the necessary features to the user.
+
+- inheritance: The mechanism by which one class can inherit properties and methods from another class, allowing for code reuse and the creation of a hierarchical relationship between classes.
+
+- polymorphism: (poly: many, morph: form) Taking more than one form. It allows objects of different classes to be treated as objects of a common superclass, typically through method overriding or method overloading.
