@@ -1,37 +1,54 @@
-// Date of Birth: 6 Feb 2026
-// custom data types -> classes
-// class -> custom data type or a template or a blueprint
-var DOB = /** @class */ (function () {
-    // constructor: method -- special method -- has same name as that of the class
-    // and called whenever we create an object to the class
-    function DOB(day, month, year) {
-        // to initialize variables (member variables)
-        this.day = day;
-        this.month = month;
-        this.year = year;
-        // console.log(this); // this -> dob1
-    }
-    // printObject(object: DOB) {
-    //     console.log(object);
-    // }
-    DOB.prototype.getAge = function () {
-        return 2026 - this.year;
-    };
-    return DOB;
-}());
-// dob1 -> object
-// object: it is an instance of a class
-var dob1 = new DOB(6, 'Feb', 2015);
-// this keyword -> current instance referring to the current object of the class
-// implicitly passed to the class'es constructor or methods
-// explicitly passed to the method
-// dob1.printObject(dob1);
-// console.log(dob1.day, dob1.month, dob1.year);
-console.log('You are', dob1.getAge(), ' years old');
-/*
-    dob1 = DOB {
-        day: 6,
-        month: 'Feb',
-        year: 2026
-    }
-*/ 
+// let person = {
+//     name: 'krish',
+//     age: 25
+// }
+
+// // destructuring
+// let { name, age } = person;
+
+// console.log(name, age);
+
+// let person = ['krish', 25];
+
+// let [name, age] = person;
+
+// console.log(name, age);
+
+// destructuring
+// function fun([name, age]) {
+//     console.log(name, age);
+// }
+
+// let person = ['krish', 25];
+
+// fun(person);
+
+// function fun({ name, age }) {
+//     console.log(name, age);
+// }
+
+// let person = {
+//     name: 'krish',
+//     age: 25
+// }
+
+// fun(person);
+
+// callback function: passing one function to another function as an argument.
+
+// higher order function
+function calc(fun, a, b) {
+    console.log(fun(a, b));
+}
+
+// callback function
+function add(a, b) {
+    return a + b;
+}
+
+// callback function
+function sub(a, b) {
+    return a - b;
+}
+
+calc(sub, 5, 6);

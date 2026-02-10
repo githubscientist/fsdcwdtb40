@@ -76,3 +76,15 @@ Classes:
 - inheritance: The mechanism by which one class can inherit properties and methods from another class, allowing for code reuse and the creation of a hierarchical relationship between classes.
 
 - polymorphism: (poly: many, morph: form) Taking more than one form. It allows objects of different classes to be treated as objects of a common superclass, typically through method overriding or method overloading.
+
+# destructuring
+
+- Destructuring is a convenient way of extracting values from arrays or objects and assigning them to variables in a single statement.
+
+# callback function
+
+- a function that is passed as an argument to another function.
+
+# higher order function
+
+- a function that takes another function as an argument or returns a function as its result.
