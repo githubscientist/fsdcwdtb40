@@ -2,7 +2,7 @@
   "name": "fsdcwdtb40",
   "version": "1.0.0",
   "description": "- It's a dynamically typed language used for web development. - Because during runtime, types are determined on the fly.",
-  "main": "app.js",
+  "main": "Main.js",
   "type": "commonjs",
   "scripts": {
     "start": "tsc app.ts && node app.js",
